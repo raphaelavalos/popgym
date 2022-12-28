@@ -89,6 +89,9 @@ class RepeatPrevious(POPGymEnv):
 class RepeatPreviousEasy(RepeatPrevious):
     pass
 
+class RepeatPreviousEasyPlus(RepeatPrevious):
+    def __init__(self):
+        super().__init__(num_decks=2, k=8)
 
 class RepeatPreviousMedium(RepeatPrevious):
     def __init__(self):

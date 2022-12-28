@@ -78,6 +78,7 @@ from popgym.envs.repeat_first import (
 from popgym.envs.repeat_previous import (
     RepeatPrevious,
     RepeatPreviousEasy,
+    RepeatPreviousEasyPlus,
     RepeatPreviousHard,
     RepeatPreviousMedium,
 )
@@ -107,6 +108,7 @@ SIMPLE_ENVS: Dict[gym.Env, Dict[str, Any]] = {
 SIMPLE_ENVS_EASY: Dict[gym.Env, Dict[str, Any]] = {
     AutoencodeEasy: {"id": "popgym-AutoencodeEasy-v0"},
     RepeatPreviousEasy: {"id": "popgym-RepeatPreviousEasy-v0"},
+    RepeatPreviousEasyPlus: {"id": "popgym-RepeatPreviousEasyPlus-v0"},
     RepeatFirstEasy: {"id": "popgym-RepeatFirstEasy-v0"},
     CountRecallEasy: {"id": "popgym-CountRecallEasy-v0"},
 }
