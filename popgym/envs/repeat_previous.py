@@ -93,6 +93,10 @@ class RepeatPreviousEasyPlus(RepeatPrevious):
     def __init__(self):
         super().__init__(num_decks=2, k=8)
 
+class RepeatPrevious16(RepeatPrevious):
+    def __init__(self):
+        super().__init__(num_decks=2, k=16)
+
 class RepeatPreviousMedium(RepeatPrevious):
     def __init__(self):
         super().__init__(num_decks=2, k=32)
