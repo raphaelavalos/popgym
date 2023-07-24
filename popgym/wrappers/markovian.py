@@ -17,9 +17,9 @@ class Markovian(Wrapper):
 
     def __init__(self, env: Env, observability: Observability):
         super(Markovian, self).__init__(env)
-        assert isinstance(
-            env.unwrapped, POPGymEnv
-        ), "This wrapper is made for POPGymEnvs."
+        #  assert isinstance(
+        #      env.unwrapped, POPGymEnv
+        #  ), "This wrapper is made for POPGymEnvs."
         self.observability = observability
         if observability == Observability.FULL_AND_PARTIAL:
             self.observation_space = spaces.Dict(
